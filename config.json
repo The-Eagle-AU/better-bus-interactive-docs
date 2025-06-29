@@ -1,0 +1,18 @@
+{
+    "agencies": [
+      {
+        "agencyKey": "wmata",
+        "url": "https://api.wmata.com/gtfs/bus-gtfs-static-bbnr-qa.zip?api_key="
+      }
+    ],
+    "bufferSizeMeters": 400,
+    "coordinatePrecision": 5,
+    "outputType": "agency",
+    "outputFormat": "lines-and-stops",
+    "outputPath": "custom/output/path",
+    "overwriteExistingFiles": true,
+    "startDate": "20250701",
+    "endDate": "20250731",
+    "verbose": true,
+    "zipOutput": false
+  }
