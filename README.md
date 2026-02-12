@@ -14,8 +14,10 @@ The Washington Metropolitan Area Transit Authority replaced all of its bus route
 of the network since it began operation 50 years ago. Nine “Better Bus” routes will replace existing routes through
 American University and Tenleytown.
 
-We were dissatisfied by [Metro's existing maps](https://www.wmata.com/initiatives/plans/Better-Bus/upload/Resource_2025-Network_District-of-Columbia-Map.pdf) that were difficult to read and on too great a scale to be relevant
+I was dissatisfied by [Metro's existing maps](https://www.wmata.com/initiatives/plans/Better-Bus/upload/Resource_2025-Network_District-of-Columbia-Map.pdf) that were difficult to read and on too great a scale to be relevant
 to AU students. That's what this map seeks to fix.
+
+Read the story: [New Metrobus routes started Sunday. Here’s what the AU community needs to know](https://www.theeagleonline.com/article/2025/06/new-metrobus-routes-started-sunday-heres-what-the-au-community-needs-to-know) by Owen Auston-Babcock, who also created this project.
 
 ## Data
 *[Back to top](#documentation-for-june-2025-interactive-map-of-new-dc-bus-routes)*
@@ -30,15 +32,15 @@ schedule data that supports WMATA’s online trip planner."
 ## Methodology
 *[Back to top](#documentation-for-june-2025-interactive-map-of-new-dc-bus-routes)*
 
-We downloaded the GTFS .Zip file and used the JavaScript package gtfsToGeoJSON to convert the data into a map-readable
+I downloaded the GTFS .Zip file and used the JavaScript package gtfsToGeoJSON to convert the data into a map-readable
 format. You can replicate this step by running `gtfs-to-geojson.js`, but first make sure you add your [WMATA API](https://developer.wmata.com/)
 key to `config.json` (sorry, not getting mine!).
 
-Once the data was converted to GeoJSON, we wrote (with help from Claude) a pretty generic interactive map. It uses
+Once the data was converted to GeoJSON, I wrote (with help from Claude) a pretty generic interactive map. It uses
 Leaflet with MapTiler's Streets V2 basemap. Leaflet supports the initialization and CSS elements, such as the tooltips
 and route lines.
 
-The map itself, as deployed in our story, is hosted on my personal website and is called by an `iframe` element embedded via our CMS.
+The map itself, as deployed in our story, is hosted on my personal website and is called by an `iframe` element embedded via The Eagle's CMS.
 
 ## What's in here?
 *[Back to top](#documentation-for-june-2025-interactive-map-of-new-dc-bus-routes)*
